@@ -1,0 +1,110 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  line-height: 6rem;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji";
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh;
+  background: red;
+  border: 0.5px solid black;
+}
+
+.section.open {
+  flex-grow: 1;
+  border-left: 0.5px solid black;
+}
+
+.section.open .content {
+  width: 40vw;
+  background: #982738;
+  margin-left: 40px;
+  border-left: 0.5px solid black;
+}
+
+.section.open .content.images {
+  background: #982738;
+  height: auto;
+  /* width: 50%; */
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+/* img {
+  max-width: 10%;
+  height: auto;
+} */
+
+.bookmark {
+  width: 25rem;
+  height: 2rem;
+  top: 50%;
+  position: fixed;
+  -webkit-transform: translate(-8.6rem, -50%) rotate(90deg);
+  transform: translate(-8.6rem, -50%) rotate(90deg);
+  text-align: center;
+}
+
+.bookmark.hover {
+  cursor: crosshair;
+}
+
+.content {
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.content.images {
+  display: block;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+.content.bg.zip {
+  margin-left: 40px;
+  width: 100%;
+  background-color: #000;
+  background-image: url(images/ziptiepattern.png);
+  background-repeat: repeat;
+}
+
+.content.images img {
+  max-width: 100%;
+  max-height: 100%
+  display: flex;
+  overflow-x: auto;
+  /* display: flex; */
+  padding-left: 40px;
+  /* align-items: center; */
+}
+
+
+.hideDivs{
+   display:none;
+}
