@@ -14,13 +14,10 @@ body {
 }
 
 ::-webkit-scrollbar {
-  /* display: none; */
-  /* visibility: visible; */
   white-space: nowrap;
 }
 
 ::-webkit-scrollbar-track {
-  /* box-shadow: inset 1px 1px 1px 1px gray; */
   border-radius: 0px;
 }
 
@@ -48,25 +45,21 @@ body {
 }
 
 .section.open .content {
-  width: calc(100% - 4rem);
-  background: #982738;
-  margin-left: 40px;
+  width: 60vw;
+  margin-left: 4rem;
   border-left: 0.5px solid black;
   overflow-x: auto;
     white-space: nowrap;
 }
 
 .section.open .content.images {
-  /* background: #982738; */
-  /* height: auto; */
-  /* width: 90vw; */
-  /* vertical-align: middle; */
+  background: #982738;
+  height: auto;
+  width: 60vw;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
   border: 0;
-  /* overflow-y: hidden;
-  overflow-x: scroll; */
-
 }
 
 .content.images img {
@@ -99,17 +92,18 @@ body {
   display: block;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 40px;
+  margin-left: 4rem;
 }
 
 .content.bg.zip {
-  margin-left: 40px;
+  margin-left: 4rem;
   width: 100%;
   background-color: #000;
   background-image: url(images/ziptiepattern.png);
   background-repeat: repeat;
 }
 
-.hideDivs{
-   display:none;
+p {
+  width: 4rem;
+  visibility: hidden;
 }
