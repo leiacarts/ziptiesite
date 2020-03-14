@@ -1,109 +1,100 @@
-html {
-  font-size: 62.5%;
-  overflow-y: hidden;
-}
-body {
-  margin: 0;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.075rem;
-  line-height: 6rem;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji";
-  font-weight: 400;
-}
+<!doctype html>
 
-::-webkit-scrollbar {
-  white-space: nowrap;
-}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-::-webkit-scrollbar-track {
-  border-radius: 0px;
-}
+  <title>&#8593; zip &#8596; tie &#8595;</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
 
-::-webkit-scrollbar-thumb {
-  background: #000;
-  border-radius: 0px;
-}
+  <link rel="stylesheet" href="styles.css">
 
-#container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  overflow: hidden;
-}
+</head>
 
-.section {
-  height: 100vh;
-  /* background: red; */
-  border: 0.25px solid black;
-}
+<body>
 
-.section.open {
-  flex-grow: 1;
-  border-left: 0.25px solid black;
-}
+<div id="container">
+  <!-- //contains all -->
 
-.section.open .content {
-  width: 60vw;
-  margin-left: 4rem;
-  border-left: 0.5px solid black;
-  overflow-x: auto;
-    white-space: nowrap;
-}
+<!-- 1 button 2 content -->
+<!-- open: show content, make width adaptable -->
+<div class="section">
+  <div class="bookmark">&#8593; re &#8596; entry &#8595;</div>
+    <div class="content"><p></p>
+      <div class="images">
+        <img src="images/ziptiesmall15.png">
+        <img src="images/ziptiesmall16.png">
+        <img src="images/ziptiesmall17.png">
+        <img src="images/ziptiesmall18.png">
+      </div>
+      </div>
+</div>
 
-.section.open .content.images {
-  background: #982738;
-  height: auto;
-  width: 60vw;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+<div class="section">
+  <div class="bookmark">&#8593; stress &#8596; strain &#8595;</div>
+  <div class="content"><p></p>
+    <div class="images">
+    <img src="images/ziptiesmall13.png">
+      <img src="images/ziptiesmall14.png">
+    </div>
+  </div>
+</div>
 
-.content.images img {
-  max-width: 50%;
-  max-height: 50%;
-}
+<div class="section">
+  <div class="bookmark">&#8593; reci &#8596; divism &#8595;</div>
+  <div class="content"><p></p>
+    <div class="images">
+      <img src="images/ziptiesmall11.png">
+      <img src="images/ziptiesmall12.png">
+      <img src="images/ziptiesmall13.png">
+      <img src="images/ziptiesmall14.png">
+    </div>
+  </div>
+</div>
 
-.bookmark {
-  width: 25rem;
-  height: 2rem;
-  top: 50%;
-  position: fixed;
-  -webkit-transform: translate(-8.6rem, -50%) rotate(90deg);
-  transform: translate(-8.6rem, -50%) rotate(90deg);
-  text-align: center;
-}
+<div class="section">
+  <div class="bookmark">&#8593; standard &#8596; deviation &#8595;</div>
+  <div class="content"><p></p>
+    <div class="images">
+      <img src="images/ziptiesmall7.png">
+      <img src="images/ziptiesmall8.png">
+      <img src="images/ziptiesmall9.png">
+      <img src="images/ziptiesmall10.png">
+    </div>
+  </div>
+</div>
 
-.bookmark:hover {
-  margin-right: 1rem;
-  cursor: crosshair;
-}
+<div class="section">
+  <div class="bookmark">&#8593; ouro &#8596; boros &#8595;</div>
+  <div class="content"><p></p>
+    <div class="images">
+      <img src="images/ziptiesmall4.png">
+      <img src="images/ziptiesmall5.png">
+      <img src="images/ziptiesmall6.png">
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="bookmark">&#8593; ten &#8596; sion &#8595;</div>
+  <div class="content"><p></p>
+    <div class="images">
+      <img class="fit" src="images/ziptiesmall.png">
+      <img class="fit" src="images/ziptiesmall2.png">
+      <img class="fit" src="images/ziptiesmall3.png">
+    </div>
+  </div>
+</div>
+<div class="section pattern open images">
+  <div class="bookmark">&#8593; zip &#8596; tie &#8595;</div>
+  <div class="content bg zip"></div></div>
+</div>
 
-.content {
-  height: 100vh;
-  display: flex;
-  overflow: hidden;
-}
+</div>
 
-.content.images {
-  display: block;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 4rem;
-}
 
-.content.bg.zip {
-  margin-left: 4rem;
-  width: 100%;
-  background-color: #000;
-  background-image: url(images/ziptiepattern.png);
-  background-repeat: repeat;
-}
 
-p {
-  width: 4rem;
-  visibility: hidden;
-}
+
+  <script src="app.js"></script>
+</body>
+</html>
