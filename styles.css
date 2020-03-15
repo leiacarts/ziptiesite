@@ -58,12 +58,6 @@ body {
   display: none;
 }
 
-/*
-.section.images.show {
-  display: inline-block;
-  border-left: 0.25px solid black;
-} */
-
 .section.open .content {
   width: 60vw;
   margin-left: 4rem;
@@ -71,22 +65,6 @@ body {
   overflow-x: auto;
   white-space: nowrap;
 }
-/*
-.section.open .content.images {
-  background: #982738;
-  height: auto;
-  width: 60vw;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  border: 0;
-} */
-/*
-img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-} */
 
 .bookmark {
   width: 25rem;
@@ -108,7 +86,6 @@ img {
   display: flex;
   overflow: hidden;
   vertical-align: middle;
-  /* visibility: collapse; */
 }
 
 .content.bg.zip {
