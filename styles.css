@@ -36,12 +36,12 @@ body {
 .section {
   height: 100vh;
   background: #fff;
-  border: 0.25px solid black;
+  border-left: 0.125px solid black;
 }
 
 .section.open {
   flex-grow: 1;
-  border-left: 0.25px solid black;
+  border-left: 0.125px solid black;
 }
 
 .section.show img {
